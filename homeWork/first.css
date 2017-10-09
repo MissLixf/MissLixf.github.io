@@ -4,8 +4,8 @@
 .wrap{
 	width:100%;
 	min-width: 1510px;
-	height:849px;
-	background-color:rgba(10,90,50,0.5);
+	height:100vh;
+	/*background-color:rgba(10,90,50,0.5);*/
 	position: absolute;
 	left:0;
 	top:0;
@@ -14,5 +14,5 @@
 video{
 	width:100%;
 	min-width: 1510px;
-	height:849px;
+	height:100px;
 }
