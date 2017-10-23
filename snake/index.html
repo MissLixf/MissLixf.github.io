@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.wrap{
+			width:800px;
+			height:600px;
+			border:5px solid;
+			position: relative;
+			background: rgb(240,255,240);
+		}
+		.bodyBox{
+			width:20px;
+			height:20px;
+			display: inline-block;
+			position: absolute;
+			left:0;top:0;
+			padding:2px;
+			box-sizing: border-box;
+		}
+		.head{
+			left:40px;
+			top:0px;
+			background: rgb(193,205,193);
+			font-size: 10px;
+			padding:0px;
+		}
+		.one{
+			background: rgb(255,240,245);
+			left:20px;
+			top:0px;
+			
+		}
+		.two{
+			background: rgb(238,213,210);
+			left:0px;
+			top:0px;
+		}
+	</style>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+	<div class="wrap">
+		<div class="body1 two bodyBox"><span class="glyphicon glyphicon-fire" aria-hidden="true"></span></div>
+		<div class="body1 one bodyBox"><span class="glyphicon glyphicon-certificate" aria-hidden="true"></span></div>
+		<div class="head bodyBox">^_^</div>
+	</div>
+</body>
+<script src="main.js"></script>
+<script>
+	var wrap=document.querySelector(".wrap");
+	var head=document.querySelector(".head");
+	var minBody=document.querySelectorAll(".body1");
+	var snake=new snake({
+		content:wrap,
+		head:head,
+		minBody:minBody
+
+	});
+</script>
+</html>
